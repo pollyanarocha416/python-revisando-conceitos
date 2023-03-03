@@ -2,29 +2,29 @@ class Conta:
     # self sabe o endereco
     def __init__(self, numero, titular, saldo, limite):
         print("Construindo objeto ...")
-        self.numero = numero
-        self.titular = titular
-        self.saldo = saldo
-        self.limite = limite
+        self.__numero = numero
+        self.__titular = titular
+        self.__saldo = saldo
+        self.__limite = limite
 
     def extrato(self):
-        print("Saldo de {} do titular {}".format(self.saldo, self.titular))
+        print("Saldo de {} do titular {}".format(self.__saldo, self.__titular))
 
     def depositar(self, valor):
-        self.saldo += valor
+        self.__saldo += valor
 
     def sacar(self, valor):
-        self.saldo -= valor
+        self.__saldo -= valor
 
     def __str__(self) -> str:
-        print(f"Conta titular: {self.titular}, conta: {self.numero}, saldo atual: {self.saldo}, seu limite: {self.limite}")
+        print(f"Conta titular: {self.__titular}, conta: {self.__numero}, saldo atual: {self.__saldo}, seu limite: {self.__limite}")
 
 
 
 # testando
 c = Conta(123, "Polly", 1000, 1000)
 c.__str__()
-c.depositar(300)
+c.sacar(32)
 c.extrato()
 """ 
 c.extrato()
