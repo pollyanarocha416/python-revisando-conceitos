@@ -12,20 +12,32 @@ class Conta:
 
     def depositar(self, valor):
         self.__saldo += valor
-
+        self.extrato()
     def sacar(self, valor):
         self.__saldo -= valor
 
+    def transferir(self, valor, destino):
+        self.sacar(valor)
+        destino.depositar(valor)
+        self.extrato()
     def __str__(self) -> str:
         print(f"Conta titular: {self.__titular}, conta: {self.__numero}, saldo atual: {self.__saldo}, seu limite: {self.__limite}")
 
 
 
 # testando
-c = Conta(123, "Polly", 1000, 1000)
+
+c = Conta(321, "Marco", 100.0, 1000.0)
+
+cp = Conta(123, "Polly", 100.0, 1000)
+cp.__str__()
 c.__str__()
-c.sacar(32)
+""" cp.transferir(100.0, cp, c) 
+pra nao fazer isso é so add self, envez de origem"""
+cp.transferir(100, c)
+cp.extrato()
 c.extrato()
+
 """ 
 c.extrato()
 c.depositar(12)
