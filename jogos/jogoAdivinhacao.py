@@ -49,4 +49,7 @@ def jogo_advinhacao():
             pontos = pontos - pontos_pedidos
     print("fim do jogo")
 
+
     # gerar val random -> gerar val aleatorio
+if __name__ == ("__main__"):
+    jogo_advinhacao()
