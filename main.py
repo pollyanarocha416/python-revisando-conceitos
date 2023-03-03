@@ -2,9 +2,23 @@
 
 print("çslkdjf", "çdf ", end="====")
  """
-num_secreto = 42
+import random
+num_secreto = random.randrange(1, 101) # pra n ser decimal
+print(num_secreto)
 #usando laco
-tentativas = int(input("qtas tentativa vc quer ter? "))
+tentativas = 3
+
+
+print("qual nivel de dificuldade ?")
+nivel = int(input(("digite (1)Facil (2)Medio (3)dificil: ")))
+
+if nivel == 1:
+    tentativas = 20
+elif nivel == 2:
+    tentativas = 10
+else:
+    tentativas = 5
+
 for rodada in range(1, tentativas + 1):# pq ele ignora o 5, 0 4
     print(f"tentativas: {rodada} de {tentativas}")
     chut = int(input("Digite um num de 1 e 100: "))
@@ -27,6 +41,5 @@ for rodada in range(1, tentativas + 1):# pq ele ignora o 5, 0 4
             print("vc errou! o seu chute foi menor!")
 
 print("fim do jogo")
-""" 
-for rodar in range(1, 10, 2):# o 2 intercala
-    print(rodar) """
+
+# gerar val random -> gerar val aleatorio
