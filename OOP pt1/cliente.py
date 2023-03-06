@@ -10,5 +10,7 @@ class Cliente:
     def nome(self, nome):
         print("chamnado setter nome()")
         self.__nome = nome
+
+        
 c = Cliente("polly")
 c.nome
