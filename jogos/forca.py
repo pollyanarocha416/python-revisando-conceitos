@@ -4,7 +4,7 @@ def jogo_forca():
     print("*********************************************")
     print("**********! Jogo da Forca !*************")
     print("*********************************************")
-    print("fim do jogo")
+
 
     palavra_secreta = "banana".upper()
     letras_acertadas = ["_", "_", "_", "_", "_", "_"]
@@ -28,8 +28,16 @@ def jogo_forca():
         else:
             erros+=1
         #erros igual a 6
+        acertou = "_" not in letras_acertadas
         enforcou = erros == 6
         print(letras_acertadas)
+    
+    
+    if acertou:
+        print("vc ganhou :)")
+    else:
+        print("vc perdeu :(")
+    print("fim do jogo")
 #execulta quando chamo diretamente
 if __name__ == ("__main__"):
     jogo_forca()
