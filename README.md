@@ -1,1 +1,1 @@
-#Iniciando no curso da Alura de Python, revendo conceitos
+#me dedicando, inteiramente, nos cursos da Alura relacionado a Python e MySQL
