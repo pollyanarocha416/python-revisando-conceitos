@@ -4,3 +4,5 @@ class Contato:
         self.id = id
         self.nome = nome
         self.email = email
+
+
