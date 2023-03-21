@@ -2,7 +2,7 @@
 """ from fila_prioritaria import FilaPrioritaria """
 from fabrica_fila import FabricaFila
 from estatistica_detalhada import EstatisticaDetalhada
-from estatistica_resumida import EstatisticaResumida
+# from estatistica_resumida import EstatisticaResumida
 
 
 """ fila_teste = fila_normal()
@@ -25,5 +25,4 @@ teste_fabrica.atualiza_fila()
 teste_fabrica.atualiza_fila()
 teste_fabrica.atualiza_fila()
 print(teste_fabrica.chama_cliente(2))
-print(teste_fabrica.estatistica('21/03/2023', 120, EstatisticaResumida))
-print(teste_fabrica.estatistica('21/03/2023', 120, EstatisticaDetalhada))
+print(teste_fabrica.estatistica(EstatisticaDetalhada('21/03/2023', 120)))
