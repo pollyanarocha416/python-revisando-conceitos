@@ -1,4 +1,4 @@
-from fila_normal import fila_normal
+# from fila_normal import fila_normal
 from fila_prioritaria import FilaPrioritaria
 
 
